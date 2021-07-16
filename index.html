@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Rune Calculator</h1>
+    </header>
+    <main>
+        <section id="sectionEquipmentsList">
+            <label for="equipmentsList">Choose your piece of equipment :</label>
+            <select name="equipment" id="equipmentsList">
+                <option value="">--Please choose an option--</option>
+                <option value="192">Two Handed Weapon</option>
+                <option value="144">One Handed Weapon</option>
+                <option value="48">Second Handed Weapon</option>
+                <option value="48">Head</option>
+                <option value="96">Body Armor</option>
+                <option value="48">Shoes</option>
+            </select>
+        </section>
+        <section id="sectionCalculRunes">
+            <label for="numberOfPiece">Number of piece :</label>
+            <input type="number" id="numberOfPieces" value="0">
+            <label for="priceEquipment">Price equipment :</label>
+            <input type="number" id="priceEquipment" name="" value="0" required>
+            <label for="priceLevelOne">Price per piece .1 :</label>
+            <input type="number" id="pricePieceLevelOne" value="0">
+            <label for="priceLevelTwo">Price per piece .2 :</label>
+            <input type="number" id="pricePieceLevelTwo" value="0">
+            <label for="priceLevelThree">Price per piece .3 :</label>
+            <input type="number" id="pricePieceLevelThree" value="0">
+        </section>
+        <button type="button" id="buttonCalcul">Calcul Price</button>
+        <section>
+            <p>Total price : <span id="spanResult"></span></p>
+        </section>
+        <script src="./js/main.js"></script>
+    </main>
+</body>
+</html>

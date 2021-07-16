@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    width: 30%;
+}
+
+label {
+    margin-top: 15px;
+}
