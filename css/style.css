@@ -1,9 +1,30 @@
+/* Global */
+* {
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}
+/* Header */
+header {
+    background-color: #531405;
+    padding: 2rem;
+}
 h1 {
+    margin: 0;
     text-align: center;
+    color: white;
 }
 
+/* Main */
 main {
     margin: auto;
+    width: 50%;
 }
 
 section {
@@ -11,10 +32,19 @@ section {
     flex-direction: column;
 }
 
-input, select {
-    width: 30%;
+input, select, label {
+    /* width: 30%; */
 }
 
 label {
     margin-top: 15px;
+}
+
+button {
+    width: 20%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
 }

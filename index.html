@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rune Calculator</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <section id="sectionEquipmentsList">
             <label for="equipmentsList">Choose your piece of equipment :</label>
             <select name="equipment" id="equipmentsList">
-                <option value="">--Please choose an option--</option>
+                <option value="0">--Please choose an option--</option>
                 <option value="192">Two Handed Weapon</option>
                 <option value="144">One Handed Weapon</option>
                 <option value="48">Second Handed Weapon</option>
@@ -28,15 +29,15 @@
             <label for="numberOfPiece">Number of piece :</label>
             <input type="number" id="numberOfPieces" value="0">
             <label for="priceEquipment">Price equipment :</label>
-            <input type="number" id="priceEquipment" name="" value="0" required>
+            <input type="number" id="priceEquipment" name="" value="0">
             <label for="priceLevelOne">Price per piece .1 :</label>
             <input type="number" id="pricePieceLevelOne" value="0">
             <label for="priceLevelTwo">Price per piece .2 :</label>
             <input type="number" id="pricePieceLevelTwo" value="0">
             <label for="priceLevelThree">Price per piece .3 :</label>
             <input type="number" id="pricePieceLevelThree" value="0">
+            <button type="button" id="buttonCalcul">Calcul Price</button>
         </section>
-        <button type="button" id="buttonCalcul">Calcul Price</button>
         <section>
             <p>Total price : <span id="spanResult"></span></p>
         </section>
